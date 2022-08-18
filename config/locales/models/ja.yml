@@ -1,0 +1,7 @@
+ja:
+  activerecord:
+    models:
+      blog: ブログ
+    attributes:
+      blog:
+        title: タイトル

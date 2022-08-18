@@ -9,9 +9,9 @@
 	<div class="schedule">今後の予定一覧</div>
 <table class="table">
   <thead class="thead-light">
-    <tr>
-      <th>タイトル</th>
-      <th>日程</th>
+    <tr class="border">
+      <th class="border"><p class="border-text">タイトル</p></th>
+      <th class="border"><p class="border-text">日程</p></th>
     </tr>
   </thead>
 
@@ -31,13 +31,13 @@
 
   <div class="title">
     <div class="form-tag">タイトル</div>
-    <%= form.text_field :title %>
+    <%= form.text_field :title,  class:"form-tag-box"%>
   </div>
 
 
   <div class="content">
     <div class="form-tag">内容</div>
-    <%= form.text_field :content %>
+    <%= form.text_field :content,  class:"naiyou-box"%>
   </div>
 
     <div class="time">

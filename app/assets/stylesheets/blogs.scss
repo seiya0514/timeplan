@@ -1,3 +1,48 @@
 // Place all the styles related to the blogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.top{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+}
+.col-md-4{
+  width:400px;
+}
+.col-md-8{
+  width: 1000px;
+}
+.schedule{
+  font-size: 30px;
+  font-weight:900;
+}
+.border{
+  border-bottom: 2px solid gray;
+  padding-top: 10px;
+}
+.table{
+  width:100%;
+  margin-bottom: 15px;
+}
+.form-tag-box{
+  padding: 10px;
+  width: 75%;
+  margin-bottom: 5px;
+}
+.form-tag{
+  margin-bottom: 5px;
+}
+.naiyou-box{
+  width: 70%;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+.submit{
+  padding: 10px;
+}
+.border-text{
+  text-align: left;
+}
