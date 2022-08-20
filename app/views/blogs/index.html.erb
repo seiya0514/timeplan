@@ -1,11 +1,21 @@
 <header>
+  <div class="header-left">
+    <%= link_to image_tag("logo.png", class:"header-logo"), "/" %>
+  </div>
 
+  <div class="header-right">
+    <ul class="header-right-ul">
+        <li><%= link_to 'ToDoリスト', root_path, class: "header-link" %></li> 
+        <li><%= link_to 'ログアウト', destroy_user_session_path,  method: :delete, class: "header-link" %> </li>
+    </ul>
+  </div>
+  
 </header>
-<p id="notice"><%= notice %></p>
+
 
 
 <div class="toppage">
-<h1 class="top">カレンダー</h1>
+<h1 class="top"></h1>
 <br>
 
 <div class="row">
@@ -50,7 +60,7 @@
   </div>
 
  <div class="submit">
-    <%= form.submit %>
+    <%= form.submit class:"submit-box"%>
  </div>
 <% end %>
 </div>
@@ -60,6 +70,7 @@
 
 <br>
 <div class="col-md-8">
+ <p class="user-calendar"><%= current_user.name %>さんのカレンダー</p> 
 <%= month_calendar events: @blogs do |date, blogs| %>
   <%= date.day %>
 
@@ -72,3 +83,7 @@
 </div>
 </div>
 </div>
+
+<footer>
+
+</footer>

@@ -4,6 +4,7 @@
 .top{
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 15px;
 }
 .row{
   display: flex;
@@ -41,15 +42,59 @@
   margin-bottom: 5px;
 }
 .submit{
+  margin-top: 20px;
+  margin-left: 110px;
+}
+.submit-box{
   padding: 10px;
+  background-color: #3366FF	;
+  opacity: 0.8;
+  color: white;
+}
+.submit-box:hover{
+  cursor: pointer;
+  background-color: #3366FF	;
+  opacity: 1;
 }
 .border-text{
   text-align: left;
   font-weight: 600;
 }
 header{
-  background-color: rgb(143, 143, 143);
-  height: 100px;
+  height: 70px;
   width: 100%;
   opacity: 0.5;
+  display: flex;
 }
+.header-left{
+  height:100%;
+  width:50%;
+}
+.header-right{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.header-right li{
+  list-style: none;
+  margin:40px 0 0 150px;
+  font-size: 22px;
+}
+.header-logo{
+  height:130px;
+  margin-left: 200px;
+  display: block;
+}
+.header-right-ul{
+  display: flex;
+}
+.header-link{
+  color: black;
+}
+.user-calendar{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 800;
+}
+
