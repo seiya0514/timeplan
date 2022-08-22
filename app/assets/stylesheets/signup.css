@@ -1,129 +1,158 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
+
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+
+.body{
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background-image: url(http://ginva.com/wp-content/uploads/2012/07/city-skyline-wallpapers-008.jpg);
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  z-index: 0;
 }
 
-.box1 {
-  width: 350px;
-  height: 600px;
-  margin: 60px auto 0;
-  border-radius: 4px;
-  border: 1px #ddd solid;
+.grad{
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+  z-index: 1;
+  opacity: 0.7;
 }
 
-.box2 {
-  width: 350px;
-  height: 450px;
-  margin: 60px auto 0;
-  border-radius: 4px;
-  border: 1px #ddd solid;
+.header{
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% - 255px);
+  z-index: 2;
 }
 
-.box-inner {
-  padding: 20px 26px;
-}
-
-h1 {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1.2;
-  margin-bottom: 10px;
-  padding-bottom: 4px;
-  color: #111111;
-}
-
-.box-name {
-  margin-bottom: 13px;
-}
-
-.box-email {
-  margin-bottom: 13px;
-}
-
-.box-password {
-  margin-bottom: 22px;
-}
-
-.box-name label, .box-email label, .box-password label {
-  font-weight: 700;
-  font-size: 13px;
-  padding-left: 2px;
-  padding-bottom: 2px;
-}
-
-.box-name input[type="text"], .box-email input[type="email"], .box-password input[type="password"] {
-  border-style: none;
-  box-sizing: border-box;
-  width: 100%;
-  height: 31px;
-  border: 1px solid #a6a6a6;
-  box-shadow: 0 1px 0 rgba(0,0,0,.07) inset;
-  border-radius: 3px;
-  padding: 0 7px;
-}
-
-.column-left {
+.header div{
   float: left;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 35px;
+  font-weight: 200;
 }
 
-.column-right {
-  float: right;
+.header div span{
+  color: #ff6c36 !important;
 }
 
-.box-password a {
-  font-size: 13px;
+.login{
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 50px);
+  height: 150px;
+  width: 350px;
+  padding: 10px;
+  z-index: 2;
 }
 
-.box-login {
-  margin-bottom: 26px;
+.email-box{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px;
 }
 
-.box-login input[type="submit"] {
-  border-style: none;
-  width: 100%;
-  height: 31px;
-  background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
-  border-radius: 3px;
-  border: 1px #a88734 solid;
+.password-box{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px;
+  margin-top: 10px;
 }
 
-.box-login input[type="submit"]:hover {
+.login-btn{
+  width: 260px;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #fff;
   cursor: pointer;
-  background: #f0c14b;
+  border-radius: 2px;
+  color: #a18d6c;
+  font-family: 'Exo', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px;
+  margin-top: 10px;
+}
+.name-box{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+.login-btn:hover{
+  opacity: 0.8;
 }
 
-.remember {
-  font-size: 13px;
-  margin-top: 18px;
-  padding-left: 3px;
+.login-btn:active{
+  opacity: 0.6;
 }
 
-.box-newusr p {
-  text-align: center;
-  font-size: 12px;
-  color: #767676;
-  margin-bottom: 14px;
+.email-box:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
 }
 
-.box-newusr p span {
-  text-decoration: line-through;
-  text-decoration-color: #e7e7e7;
+.password-box:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
 }
 
-.box-newusr a {
-  display: block;
-  width: 100%;
-  height: 31px;
-  font-size: 13px;
-  color: #111;
-  line-height: 31px;
-  text-align: center;
-  background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
-  border-radius: 3px;
-  border: 1px #a2a6ac solid;
+.login-btn:focus{
+  outline: none;
 }
 
-.box-newusr a:hover {
-  background: #e7e9ec;
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+.sinki{
+  color: #fff;
+  margin-left: 95px;
+  opacity: 0.8;
+  font-size: 18px;
+}
+.sinki-message{
+  color: #fff;
+  opacity: 0.8;
+  margin: 20px 0 10px 0;
+}
+.sinki:hover{
+  opacity: 1;
 }

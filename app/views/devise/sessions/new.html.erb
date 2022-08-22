@@ -1,29 +1,16 @@
-<div class="box2">
-  <div class="box-inner">
-    <%= form_with model: @user, url: user_session_path, local: true do |f| %>
-    <h1>ログイン</h1>
-    <div class="box-email">
-      <%= f.label :email, "Eメール" %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<div class="body"></div>
+    <div class="grad"></div>
+    <div class="header">
+      <div>Time<span>Plan</span></div>
     </div>
-    <div class="box-password">
-      <div class="a-row">
-        <div class="column-left">
-          <%= f.label :password, "パスワード" %>
-        </div>
-      </div>
-      <%= f.password_field :password, autocomplete: "current-password" %>
-    </div>
-    <div class="box-login">
-      <%= f.submit "ログイン" %>
-      <% if devise_mapping.rememberable? %>
-      <% end %>
-    </div>
-    <% end %>
+    <br>
 
-    <div class="box-newusr">
-      <p><span>------------</span> 新規登録はこちらから <span>------------</span></p>
-      <%= link_to "新規登録", new_user_registration_path %>
-    </div>
-  </div>
-</div>
+    <%= form_with model: @user, url: user_session_path, local: true do |f| %>
+      <div class="login">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Eメール", :class => 'email-box' %>
+        <%= f.password_field :password, autocomplete: "current-password", placeholder:"パスワード", :class => 'password-box' %>
+        <%= f.submit "ログイン", :class => 'login-btn' %>
+          <p class="sinki-message"><span>--------</span> 新規登録はこちらから <span>--------</span></p>
+          <%= link_to "新規登録", new_user_registration_path, class:'sinki' %>
+      </div>
+    <% end %>
