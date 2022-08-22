@@ -60,40 +60,131 @@
   text-align: left;
   font-weight: 600;
 }
-header{
   height: 70px;
-  width: 100%;
-  opacity: 0.5;
-  display: flex;
-}
-.header-left{
-  height:100%;
-  width:50%;
-}
-.header-right{
-  height: 100%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-}
-.header-right li{
-  list-style: none;
-  margin:40px 0 0 150px;
-  font-size: 22px;
-}
-.header-logo{
-  height:130px;
-  margin-left: 200px;
-  display: block;
-}
-.header-right-ul{
-  display: flex;
-}
-.header-link{
-  color: black;
-}
 .user-calendar{
   font-size: 30px;
   text-align: center;
   font-weight: 800;
+}
+header{
+  position: absolute;
+  width: 1512px;
+  height: 85px;
+  left: 0px;
+  top: 0px;
+  border-bottom: #000000 solid 1px;
+}  
+.toppage{
+  margin-top: 81px;
+}
+.header-logo{
+  position: absolute;
+  width: 100px;
+  height: 84px;
+  left: 0px;
+  top: 0px;
+}
+.TimePlan{
+  position: absolute;
+  width: 196px;
+  height: 38px;
+  left: 140px;
+  top: 18px;
+}
+
+.TimePlan h1{
+  font-family: 'Exo', sans-serif;
+
+  font-weight: 500;
+  font-size: 43.1492px;
+  line-height: 47px;
+
+  color: #000000;
+}
+.TimePlan span{
+  font-weight: 500;
+  font-size: 43.1492px;
+  line-height: 47px;
+
+  color: #FF5C00;
+}
+.green-box{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  left: 809px;
+  top: 18px;
+  opacity: 0.8;
+
+  background: #66EF7C;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.green-box:hover{
+  opacity: 1;
+}
+.bule-box{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  left: 1045px;
+  top: 19px;
+  opacity: 0.8;
+
+  background: #119BFF;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.bule-box:hover{
+  opacity: 1;
+}
+.logout{
+  position: absolute;
+  width: 124px;
+  height: 29px;
+  left: 1269px;
+  top: 27px;
+
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24.6953px;
+  line-height: 29px;
+  opacity: 0.6;
+
+  color: #000000;
+  text-decoration: none;
+}
+.logout:hover{
+  opacity: 1;
+}
+.ToDo{
+  display: inline-block;
+  margin: 5px 0 0 20px;
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24.6953px;
+  line-height: 29px;
+
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.header-calender{
+  display: inline-block;
+  margin: 3px 0 0 20px;
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27.3678px;
+  line-height: 32px;
+
+  color: #FFFFFF;
+  text-decoration: none;
 }
