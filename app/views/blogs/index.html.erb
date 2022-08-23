@@ -1,19 +1,4 @@
-<header>
-    <div class="header-logo">
-    <%= link_to image_tag("logo.png", class:"header-logo"), "/" %>
-  </div>
-  <div class="TimePlan">
-    <h1>Time<span>Plan</span></h1>
-  </div>
-  <div class="green-box">
-    <%= link_to 'カレンダー', root_path, class: "header-calender" %>
-  </div>
-  <div class="bule-box">
-    <%= link_to 'ToDoリスト', root_path, class: "ToDo" %>
-  </div>
-  <%= link_to 'ログアウト', destroy_user_session_path,  method: :delete, class: "logout" %>
-</header>
-
+<%= render "shared/header" %>
 <div class="toppage">
 <h1 class="top"></h1>
 <br>
@@ -35,7 +20,7 @@
         <% if current_user.id == blog.user_id %>
           <tr>
             <td><%= link_to blog.title , blog %></td>
-            <td><%= blog.start_time.strftime("%m-%d") %></td>
+            <td><%= blog.start_time.strftime("%m月 %d日") %></td>
           </tr>
         <% end %>
       <% end %>
@@ -54,7 +39,7 @@
 
   <div class="content">
     <div class="form-tag">内容</div>
-    <%= form.text_field :content,  class:"naiyou-box"%>
+    <%= form.text_field :content,  class:"content-box"%>
   </div>
 
     <div class="time">
@@ -88,6 +73,4 @@
 </div>
 </div>
 
-<footer>
-
-</footer>
+<%= render "shared/footer" %>
