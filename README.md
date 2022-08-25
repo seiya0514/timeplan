@@ -11,7 +11,8 @@ TimePlan
 <h2>1.ユーザー登録機能</h2>  
 
 ユーザー登録することで、自分自身の予定を見ることができるようになります
-[![Image from Gyazo](https://i.gyazo.com/8edb38c97ecbf8c96ba28e1bce619943.gif)](https://gyazo.com/8edb38c97ecbf8c96ba28e1bce619943)
+
+[![Image from Gyazo](https://i.gyazo.com/41410fd5eb78354a5a41b5fe58b30fd0.gif)](https://gyazo.com/41410fd5eb78354a5a41b5fe58b30fd0)
 
 <h2>2.予定追加機能</h2>
 
