@@ -40,7 +40,7 @@ class BlogsController < ApplicationController
 
 
   def today
-    @blogs = Blog.where("strat_time >= ?", Date.today)
+    @blogs = Blog.where("start_time >= ?", Date.today)
   end
 
   private
