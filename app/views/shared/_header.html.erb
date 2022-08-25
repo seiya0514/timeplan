@@ -8,6 +8,6 @@
     <% end %>
   </div>
     <%= link_to 'カレンダー', root_path, class: "header-calender" %>
-    <%= link_to 'ToDoリスト', root_path, class: "ToDo" %>
+    <%= link_to 'Today', today_blogs_path, class: "ToDo" %>
     <%= link_to 'ログアウト', destroy_user_session_path,  method: :delete, class: "logout" %>
 </header>

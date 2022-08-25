@@ -38,6 +38,11 @@ class BlogsController < ApplicationController
     end
   end
 
+
+  def today
+    @blogs = Blog.where("strat_time >= ?", Date.today)
+  end
+
   private
 
   def blog_parameter

@@ -330,10 +330,10 @@ footer p{
 
   color: #000000;
   opacity: 0.7;
-  text-decoration: none;  background-color: lightgray;
-  padding-left: 25px;
+  text-decoration: none;  
+  background-color: lightgray;
   border: 1px solid lightgray;
-
+  padding-left: 25px;
 }
 .back-btn:hover{
   opacity: 1;
@@ -456,3 +456,60 @@ footer p{
   border-bottom: 1px solid #000000;
   text-shadow: 0px 5.67164px 5.67164px rgba(0, 0, 0, 0.25);
 }
+//ここからtodayページ
+.today-task{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 304px;
+  height: 54px;
+  left: 594px;
+  top: 157px;
+  
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 54px;
+  
+  color: #000000;
+  
+  border-bottom: 0.902542px solid #000000;
+  text-shadow: 2.70763px 3.61017px 3.61017px rgba(0, 0, 0, 0.25);
+}
+
+.today-back{
+  position: absolute;
+  width: 91px;
+  height: 57px;
+  left: 711px;
+  top: 768px;
+
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45.3815px;
+  line-height: 57px;
+
+  opacity: 0.7;
+  text-decoration: none;  
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  color: #000000;
+}
+.today-back:hover{
+  opacity: 1;
+}
+.today-blog{
+  position: absolute;
+  width: 304px;
+  height: 500px;
+  left: 594px;
+  top: 225px;
+
+  font-size: 30px;
+
+  display:flex;
+  flex-flow: column;
+}
+
