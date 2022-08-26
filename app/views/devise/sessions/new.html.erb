@@ -10,6 +10,9 @@
         <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Eメール", :class => 'email-box' %>
         <%= f.password_field :password, autocomplete: "current-password", placeholder:"パスワード", :class => 'password-box' %>
         <%= f.submit "ログイン", :class => 'login-btn' %>
+
+        <p class="gest-login"><%= link_to 'ゲストログイン', users_guest_sign_in_path, method: :post, class:"gest" %></p>
+
           <p class="sinki-message"><span>--------</span> 新規登録はこちらから <span>--------</span></p>
           <%= link_to "新規登録", new_user_registration_path, class:'sinki' %>
       </div>

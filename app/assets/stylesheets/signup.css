@@ -156,3 +156,11 @@
 .sinki:hover{
   opacity: 1;
 }
+.gest{
+  margin-left: 75px;
+  color: #fff;
+  opacity: 0.8;
+}
+.gest-login{
+  margin-top: 20px;
+}
