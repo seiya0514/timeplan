@@ -6,6 +6,11 @@ class User < ApplicationRecord
 
   has_many :blogs
 
+  validates :name, presence: true
+
+  VALID_PASSWORD_REGEX = /\A[a-z0-9]+\z/i
+  validates :password, format: { with: VALID_PASSWORD_REGEX }
+
   def self.guest
     find_or_create_by!(email: 'guest@example.com') do |user|
       user.password = SecureRandom.urlsafe_base64

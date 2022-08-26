@@ -8,12 +8,17 @@
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
       <div class="login">
-        <%= f.text_field :name, autofocus: true, placeholder:"名前", :class => 'name-box' %>
+        <%= f.text_field :name, autofocus: true, placeholder:"name", :class => 'name-box' %>
         <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Eメール", :class => 'email-box' %>
-        <%= f.password_field :password, autocomplete: "new-password", placeholder:"パスワード", :class => 'password-box' %>
+        <%= f.password_field :password, autocomplete: "new-password", placeholder:"パスワード(半角英数)", :class => 'password-box' %>
         <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder:"パスワード再確認", :class => 'password-box' %>
         <%= f.submit "新規登録", :class => 'login-btn' %>
           <p class="sinki-message"><span>-----</span> 既に登録されていますか？ <span>-----</span></p>
           <%= link_to "ログイン", new_user_session_path, class:'sinki' %>
       </div>
     <% end %>
+
+
+
+
+
