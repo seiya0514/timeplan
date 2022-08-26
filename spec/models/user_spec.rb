@@ -25,7 +25,7 @@ RSpec.describe User, type: :model do
       it '名前が空欄だと保存できない' do
         @user.name = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("Nameを入力してください")
+        expect(@user.errors.full_messages).to include("名前を入力してください")
       end
       it 'メールアドレスがすでに登録しているユーザーと重複していると保存できない' do
         @user.save
@@ -37,19 +37,19 @@ RSpec.describe User, type: :model do
       it 'パスワードが空欄だと保存できない' do
         @user.password = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("Passwordを入力してください", "Password confirmationとPasswordの入力が一致しません")
+        expect(@user.errors.full_messages).to include("パスワードを入力してください", "パスワードは不正な値です", "パスワード再確認とパスワードの入力が一致しません")
       end
       it 'パスワード（確認含む）が5文字以下だと保存できない' do
         @user.password = 'ab123'
         @user.password_confirmation = 'ab123'
         @user.valid?
-        expect(@user.errors.full_messages).to include('Passwordは6文字以上で入力してください')
+        expect(@user.errors.full_messages).to include('パスワードは6文字以上で入力してください')
       end
       it 'パスワード（確認）が空欄だと保存できない' do
         @user.password = '123abc'
         @user.password_confirmation = ''
         @user.valid?
-        expect(@user.errors.full_messages).to include("Password confirmationとPasswordの入力が一致しません")
+        expect(@user.errors.full_messages).to include("パスワード再確認とパスワードの入力が一致しません")
       end
       it 'emaiは@を含まないと登録できない' do
         @user.email = 'testmail'
@@ -60,13 +60,13 @@ RSpec.describe User, type: :model do
         @user.password = 'テスト１１１'
         @user.password_confirmation = 'テスト１１１'
         @user.valid?
-        expect(@user.errors.full_messages).to include('Passwordは不正な値です')
+        expect(@user.errors.full_messages).to include('パスワードは不正な値です')
       end
       it 'passwordとパスワード（確認用）が不一致では登録できない' do
         @user.password = 'a123456'
         @user.password_confirmation = 'a1234567'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Password confirmationとPasswordの入力が一致しません")
+        expect(@user.errors.full_messages).to include("パスワード再確認とパスワードの入力が一致しません")
       end
     end
   end

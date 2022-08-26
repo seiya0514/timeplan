@@ -164,3 +164,7 @@
 .gest-login{
   margin-top: 20px;
 }
+.devise-error-messages{
+  color: #fff;
+  list-style: none;
+}
