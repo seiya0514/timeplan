@@ -512,4 +512,12 @@ footer p{
   display:flex;
   flex-flow: column;
 }
-
+.index-error-messages{
+  list-style: none;
+}
+.title-hissu{
+  background-color: rgb(230, 33, 33);
+  color: #ffffff;
+  border: 1px solid rgb(230, 33, 33);
+  border-radius: 5px;
+}

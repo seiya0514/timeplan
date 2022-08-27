@@ -161,6 +161,9 @@
   color: #fff;
   opacity: 0.8;
 }
+.gest:hover{
+  opacity: 1;
+}
 .gest-login{
   margin-top: 20px;
 }

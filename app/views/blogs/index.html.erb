@@ -32,7 +32,7 @@
 <%= form_with(model: @blog, local: true) do |form| %>
 
   <div class="title">
-    <div class="form-tag">タイトル</div>
+    <div class="form-tag">タイトル  <span class="title-hissu">(必須)</span></div>
     <%= form.text_field :title,  class:"form-tag-box"%>
   </div>
 
@@ -50,6 +50,7 @@
  <div class="submit">
     <%= form.submit class:"submit-box"%>
  </div>
+ <li class="index-error-messages"><%= render 'layouts/error_messages', model: form.object %></li>
 <% end %>
 </div>
 
