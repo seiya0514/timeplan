@@ -3,14 +3,14 @@
 <p class="showsai">予定詳細</p>
 <p class="title-text">タイトル：</p>
 <div class="title-box">
-  <%= @blog.title %>
+  <p class="blog-title"><%= @blog.title %></p>
 </div>
 
 
 
 <p class="naiyou-text">内　　容：</p>
 <div class="naiyou-box">
-  <%= simple_format(@blog.content) %>
+  <p class="blog-naiyou"><%= simple_format(@blog.content) %></p>
 </div>
 
 
