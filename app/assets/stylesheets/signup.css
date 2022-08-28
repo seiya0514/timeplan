@@ -32,9 +32,10 @@
 
 .header{
   position: absolute;
-  top: calc(50% - 35px);
-  left: calc(50% - 305px);
+  top: calc(50% - 125px);
+  left: calc(50% - 80px);
   z-index: 2;
+  border-bottom: 1px solid black;
 }
 
 .header div{
