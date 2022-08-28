@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
   before_action :authenticate_user!
+  before_action :move_to_index, only: [:edit, :show, :destroy]
 
   def index
       @blogs = Blog.all
@@ -52,4 +53,10 @@ class BlogsController < ApplicationController
   def blog_parameter
     params.require(:blog).permit(:title, :content, :start_time).merge(user_id: current_user.id)
   end
+
+  def move_to_index
+    blog = Blog.find(params[:id])
+    redirect_to action: :index if blog.user_id != current_user.id
+  end
+
 end
