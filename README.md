@@ -85,3 +85,16 @@ https://docs.google.com/spreadsheets/d/1kojqVt-u0HomASj4gK248UVPuycxRp1Tr6TbNO3x
 # 画面遷移図
 
 [![Image from Gyazo](https://i.gyazo.com/08e4e03d2b244c5e0acfeb4931ed304d.png)](https://gyazo.com/08e4e03d2b244c5e0acfeb4931ed304d)
+
+# 開発環境  
+
+開発言語 [Ruby on Rails, Ruby, JavaScript, HTML, CSS]
+
+・フロントエンド
+
+・バックエンド
+
+・テスト
+
+・Gitを使ったタスク管理
+
