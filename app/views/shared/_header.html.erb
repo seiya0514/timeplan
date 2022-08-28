@@ -1,0 +1,13 @@
+<header>
+    <div class="header-logo">
+    <%= link_to image_tag("logo.png", class:"header-logo"), "/" %>
+  </div>
+  <div class="TimePlan">
+    <%= link_to  root_path, class: "TimePlan-link" do %>
+      <span class="span1">Time</span><span class="span2">Plan</span>
+    <% end %>
+  </div>
+    <%= link_to 'カレンダー', root_path, class: "header-calender" %>
+    <%= link_to 'Today', today_blogs_path, class: "ToDo" %>
+    <%= link_to 'ログアウト', destroy_user_session_path,  method: :delete, class: "logout" %>
+</header>

@@ -1,0 +1,77 @@
+<%= render "shared/header" %>
+<div class="toppage">
+<h1 class="top"></h1>
+<br>
+
+<div class="row">
+<div class="col-md-4">
+	<div class="schedule">今後の予定一覧</div>
+<table class="table">
+  <thead class="thead-light">
+    <tr class="border">
+      <th class="border"><p class="border-text">タイトル</p></th>
+      <th class="border"><p class="border-text">日程</p></th>
+    </tr>
+  </thead>
+
+
+    <tbody>
+      <% @blogs.each do |blog| %>
+        <% if current_user.id == blog.user_id %>
+          <tr>
+            <td><%= link_to blog.title , blog %></td>
+            <td><%= blog.start_time.strftime("%m月 %d日") %></td>
+          </tr>
+        <% end %>
+      <% end %>
+      </tbody>
+</table>
+
+
+
+<%= form_with(model: @blog, local: true) do |form| %>
+
+  <div class="title">
+    <div class="form-tag">タイトル  <span class="title-hissu">(必須)</span></div>
+    <%= form.text_field :title,  class:"form-tag-box"%>
+  </div>
+
+
+  <div class="content">
+    <div class="form-tag">内容</div>
+    <%= form.text_field :content,  class:"content-box"%>
+  </div>
+
+    <div class="time">
+    <div class="form-tag form-tag-time">時間</div>
+    <%= form.datetime_select :start_time, class:"time-box" %>
+  </div>
+
+ <div class="submit">
+    <%= form.submit class:"submit-box"%>
+ </div>
+ <li class="index-error-messages"><%= render 'layouts/error_messages', model: form.object %></li>
+<% end %>
+</div>
+
+<br>
+
+
+<br>
+<div class="col-md-8">
+ <p class="user-calendar"><%= current_user.name %>さんのカレンダー</p> 
+<%= month_calendar events: @blogs do |date, blogs| %>
+  <%= date.day %>
+    <% blogs.each do |blog| %>
+      <% if current_user.id == blog.user_id %>
+        <div>
+          <%= link_to blog.title, blog %>
+        </div>
+      <% end %>
+    <% end %>
+<% end %>
+</div>
+</div>
+</div>
+
+<%= render "shared/footer" %>

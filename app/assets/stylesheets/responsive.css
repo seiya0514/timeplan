@@ -1,0 +1,119 @@
+/*スマホ*/
+@media screen and (max-width: 520px) {
+  .row{
+
+  }
+  .col-md-4{
+    position: absolute;
+    width: 390px;
+    height: 244px;
+    left: 3px;
+    top: 850px;
+  }
+  .col-md-8{
+    position: absolute;
+    width: 372px;
+    height: 267px;
+    left: 3px;
+  }
+  footer,.header-logo,.header-calender{
+    display: none;
+  }
+  .TimePlan{
+    left: 5px;
+    top: 23px;
+  }
+  .span1,.span2{
+    font-size: 30px;
+  }
+  .ToDo{
+    left: 180px;
+  }
+  .logout{
+    left: 270px;
+    font-size: 10;
+  }
+  .showsai{
+    left: 115px;
+  }
+  .title-text,.naiyou-text,.nitizi-text{
+    left: 5px;
+    font-size: 25px;
+  }
+  .title-box{
+    position: absolute;
+    width: 74px;
+    height: 31px;
+    left: 162px;
+    top: 305px;
+  }
+  .naiyou-box{
+    position: absolute;
+    width: 74px;
+    height: 31px;
+    left: 162px;
+    top: 410px;
+  }
+  .nitizi-box{
+    position: absolute;
+    width: 170px;
+    height: 31px;
+    left: 162px;
+    top: 530px;
+    font-size: 19px;
+  }
+  .edit-btn{
+    position: absolute;
+    width: 74px;
+    height: 31px;
+    left: 10px;
+    top: 650px;
+    font-size: 25px;
+    background-color: #fff;
+    border: 0px ;
+  }
+  .destroy-btn{
+    position: absolute;
+    width: 74px;
+    height: 31px;
+    left: 140px;
+    top: 650px;
+    font-size: 25px;
+    background-color: #fff;
+    border: 0px ;
+    color: red;
+  }
+  .back-btn{
+    position: absolute;
+    width: 74px;
+    height: 31px;
+    left: 270px;
+    top: 650px;
+    font-size: 25px;
+    background-color: #fff;
+    border: 0px ;
+  }
+  .edit-text{
+    left: 150px;
+  }
+  .form-tag1,.form-tag2,.form-tag3{
+    left: 5px;
+    font-size: 25px;
+  }
+  .title-field,.content-field,.time-field{
+    left: 5px;
+  }
+  .submit-field{
+      left: 150px;
+  }
+  .today-task{
+    left: 45px;
+  }
+  .today-blog{
+    left: 45px;
+  }
+  .header{
+    display: none;
+  }
+  
+}

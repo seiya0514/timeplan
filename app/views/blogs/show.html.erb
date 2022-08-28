@@ -1,0 +1,31 @@
+<%= render "shared/header" %>
+
+<p class="showsai">予定詳細</p>
+<p class="title-text">タイトル：</p>
+<div class="title-box">
+  <%= @blog.title %>
+</div>
+
+
+
+<p class="naiyou-text">内　　容：</p>
+<div class="naiyou-box">
+  <%= simple_format(@blog.content) %>
+</div>
+
+
+
+
+<p class="nitizi-text">日　　時：</p>
+<div class="nitizi-box">
+  <%= @blog.start_time.strftime("%Y年%m月%d日%H時%M分") %>
+</div>
+
+
+
+<%= link_to '編集', edit_blog_path(@blog), class: "edit-btn" %>
+<%= link_to '削除',blog_path(@blog.id), class: "destroy-btn", method: :delete, data: { confirm: '本当に?' } %>
+<%= link_to '戻る', blogs_path, class: "back-btn" %>
+
+
+<%= render "shared/footer" %>

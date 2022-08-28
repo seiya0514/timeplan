@@ -1,0 +1,17 @@
+<%= render "shared/header" %>
+
+<div class="today-task"><%= Date.current.strftime("%m月 %d日") %>の予定</div>
+
+<div class="today-blog">
+      <% @blogs.each do |blog| %>
+        <% if current_user.id  == blog.user_id  %>
+            <tr class="today-plan">
+              <td ><%= link_to blog.title, blog %></td>
+              <td><%= blog.start_time.strftime("%H時%M分") %></td>
+            </tr>
+        <% end %>
+      <% end %>
+</div>
+<%= link_to '戻る', blogs_path, class: "today-back" %>
+
+<%= render "shared/footer" %>
