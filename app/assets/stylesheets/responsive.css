@@ -92,6 +92,7 @@
     font-size: 25px;
     background-color: #fff;
     border: 0px ;
+    margin-bottom: 100px;
   }
   .edit-text{
     left: 150px;
@@ -115,5 +116,7 @@
   .header{
     display: none;
   }
-  
+  .submit-box{
+    margin-bottom: 100px;
+  }
 }
