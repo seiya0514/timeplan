@@ -1,7 +1,7 @@
 /*スマホ*/
 @media screen and (max-width: 520px) {
-  .row{
-
+  header{
+    width: 400px;
   }
   .col-md-4{
     position: absolute;
@@ -122,6 +122,11 @@
     left: 45px;
   }
   .submit-box{
+    margin-bottom: 100px;
+  }
+  .today-back{
+    left: 140px;
+    top: 750px;
     margin-bottom: 100px;
   }
 }
