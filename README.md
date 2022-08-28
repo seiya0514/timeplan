@@ -77,3 +77,11 @@ https://docs.google.com/spreadsheets/d/1kojqVt-u0HomASj4gK248UVPuycxRp1Tr6TbNO3x
 1.今日の予定を表示するページに天気予報API,ニュースAPIを実装したいと考えています。今日の予定を確認するついでに天気予報、ニュースも一緒に見ることが出来たならとても便利だからです。
 
 2.カレンダー共有機能を実装したいと考えています。会社のメンバー、友達同士などで共有しチーム内で予定を確認する事で効率が上がると思います。
+
+# データベース設計  
+
+[![Image from Gyazo](https://i.gyazo.com/a4de1f9d49891a11af00003f2d48244c.png)](https://gyazo.com/a4de1f9d49891a11af00003f2d48244c)
+
+# 画面遷移図
+
+[![Image from Gyazo](https://i.gyazo.com/08e4e03d2b244c5e0acfeb4931ed304d.png)](https://gyazo.com/08e4e03d2b244c5e0acfeb4931ed304d)
