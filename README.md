@@ -72,3 +72,8 @@ https://docs.google.com/spreadsheets/d/1kojqVt-u0HomASj4gK248UVPuycxRp1Tr6TbNO3x
 今日登録されている予定の一覧を表示します。
 [![Image from Gyazo](https://i.gyazo.com/f26fa04192c283676bf2895b4928908f.gif)](https://gyazo.com/f26fa04192c283676bf2895b4928908f)
 
+# 実装予定の機能
+
+1.今日の予定を表示するページに天気予報API,ニュースAPIを実装したいと考えています。今日の予定を確認するついでに天気予報、ニュースも一緒に見ることが出来たならとても便利だからです。
+
+2.カレンダー共有機能を実装したいと考えています。会社のメンバー、友達同士などで共有しチーム内で予定を確認する事で効率が上がると思います。
