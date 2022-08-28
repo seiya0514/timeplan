@@ -4,9 +4,29 @@
 
 TimePlan 
 
-# 利用方法  
+# アプリケーション概要	
 
-<h2>ユーザー登録機能</h2>
+予定を登録し登録した予定の一覧を表示します。自身が登録した予定は、編集・削除することが出来ます。
+
+# URL
+
+Herokuによるデプロイ
+
+https://timeplan-0514.herokuapp.com/
+
+# テスト用アカウント
+
+ゲストログインをお使いください。
+
+# 洗い出した要件  
+
+↓要件定義をまとめたスプレッドシート↓
+
+https://docs.google.com/spreadsheets/d/1kojqVt-u0HomASj4gK248UVPuycxRp1Tr6TbNO3xBX0/edit#gid=982722306
+
+# 実装機能 
+
+<h2>1.ユーザー登録機能</h2>
 
 名前、メールアドレス、パスワードを入力することでユーザーを作成することが出来ます。
 [![Image from Gyazo](https://i.gyazo.com/c2755a13a23076f27e0e8d688252f07f.jpg)](https://gyazo.com/c2755a13a23076f27e0e8d688252f07f)
@@ -35,3 +55,4 @@ TimePlan
 
 今日登録されている予定の一覧を表示します。
 [![Image from Gyazo](https://i.gyazo.com/f26fa04192c283676bf2895b4928908f.gif)](https://gyazo.com/f26fa04192c283676bf2895b4928908f)
+
