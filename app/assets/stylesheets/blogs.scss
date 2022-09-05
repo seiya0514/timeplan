@@ -169,6 +169,7 @@ header{
 }
 footer{
   position: absolute;
+  margin-top: 100px;
   width: 1512px;
   height: 30px;
   left: 0px;
@@ -476,29 +477,6 @@ footer p{
   
   border-bottom: 0.902542px solid #000000;
   text-shadow: 2.70763px 3.61017px 3.61017px rgba(0, 0, 0, 0.25);
-}
-
-.today-back{
-  position: absolute;
-  width: 91px;
-  height: 57px;
-  left: 711px;
-  top: 768px;
-
-  font-family: 'Acme';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 45.3815px;
-  line-height: 57px;
-
-  opacity: 0.7;
-  text-decoration: none;  
-  background-color: lightgray;
-  border: 1px solid lightgray;
-  color: #000000;
-}
-.today-back:hover{
-  opacity: 1;
 }
 .today-blog{
   position: absolute;
